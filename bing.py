@@ -28,7 +28,7 @@ EDGES = {}
 not_allow_info = '⚠️You are not authorized to use this bot⚠️'
 
 markup = quick_markup({
-    'Github': {'url': 'https://github.com/pininkara/BingChatBot'},
+    'Github': {'url': 'https://github.com/Bl4ck-lion/BingChatBot'},
 }, row_width=1)
 
 my_conversation_style = ConversationStyle.balanced
@@ -38,7 +38,7 @@ my_conversation_style = ConversationStyle.balanced
 def send_welcome(message):
     if is_allowed(message) or PUBLIC_MODE == "True" or message.chat.type == "group":
         bot.reply_to(
-            message, "Bing Chat Bot By pininkara~\n/help - Show help message\n/reset - Reset conversation\n/switch - "
+            message, "Bing Chat Bot By ZAKURO\n/help - Show help message\n/reset - Reset conversation\n/switch - "
                      "Switch conversation style (creative,balanced,precise)\n", reply_markup=markup)
     else:
         bot.reply_to(message, not_allow_info)
