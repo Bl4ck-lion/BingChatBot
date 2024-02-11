@@ -8,10 +8,11 @@ from telebot.util import quick_markup
 
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 ALLOWED_USER_IDS = os.getenv('ALLOWED_USER_IDS').split(',')
-BOT_ID = os.getenv('BOT_ID', '@ICPINTAR_BOT')
+BOT_ID = os.getenv('BOT_ID', '')
 COOKIE_PATH = os.getenv('COOKIE_PATH', './cookie.json')
-GROUP_MODE = os.getenv('GROUP_MODE', 'True')
+GROUP_MODE = os.getenv('GROUP_MODE', 'False')
 PUBLIC_MODE = os.getenv('PUBLIC_MODE', 'True')
+
 
 print("\033[1;33mThe startup is successful, the configuration is as follows : ")
 print("BOT_TOKEN: " + BOT_TOKEN)
