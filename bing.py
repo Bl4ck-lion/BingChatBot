@@ -6,12 +6,12 @@ import telebot
 from EdgeGPT import Chatbot, ConversationStyle
 from telebot.util import quick_markup
 
-BOT_TOKEN = os.getenv('BOT_TOKEN')
+BOT_TOKEN = os.getenv('5624390876:AAFtmB-sV52rPNg3Ty6O1rPgmqUZDrLHViw')
 ALLOWED_USER_IDS = os.getenv('ALLOWED_USER_IDS').split(',')
-BOT_ID = os.getenv('BOT_ID', '')
+BOT_ID = os.getenv('@ICPINTAR_BOT', '')
 COOKIE_PATH = os.getenv('COOKIE_PATH', './cookie.json')
-GROUP_MODE = os.getenv('GROUP_MODE', 'False')
-PUBLIC_MODE = os.getenv('PUBLIC_MODE', 'False')
+GROUP_MODE = os.getenv('GROUP_MODE', 'True')
+PUBLIC_MODE = os.getenv('PUBLIC_MODE', 'True')
 
 print("\033[1;33mThe startup is successful, the configuration is as follows : ")
 print("BOT_TOKEN: " + BOT_TOKEN)
